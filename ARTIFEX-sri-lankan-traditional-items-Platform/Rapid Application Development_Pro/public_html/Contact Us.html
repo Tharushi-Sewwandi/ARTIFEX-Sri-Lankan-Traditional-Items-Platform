@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/png" sizes="96x96" href="logo-1.jpg">
+  <title>Contact Us | About Us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .section {
+      padding: 30px;
+      margin-bottom: 30px;
+      background-color: #fff;
+      color: #333;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    h1,
+    h3 {
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    .about-image {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      border-radius: 5px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .icon i {
+      margin-right: 10px;
+    }
+
+    .btn-primary {
+      background-color: #333;
+      border-color: #333;
+      padding: 10px 30px;
+      font-size: 16px;
+    }
+
+    .btn-primary:hover {
+      background-color: #222;
+      border-color: #222;
+    }
+  </style>
+</head>
+<div class="header-back">
+    <div class="nav-back">
+        <div class="nav-wrap">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="logo-2.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="menu-icon-wrap">
+                <img src="menu.png" class="menu-icon" alt="menu img" onclick="menuToggle()">
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-menu-item" id="nav-menu-item">
+                    <li class="nav-list-item">
+                        <a class="nav-list-link active" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="Clay_Products.html">Clay Pots</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="handicraft.html">Handicrafts</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="mask.html">Wooden Masks</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="Contact Us.html">Contact Us</a>
+                    </li>
+                     <li class="nav-list-item pr-0">
+                        <a class="nav-list-link" href="Add to cart.html">Shopping Cart</a>
+                    </li>
+                    <li class="nav-list-item pr-0">
+                        <a class="nav-list-link" href="Main_Login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="section">
+          <h1>About Us</h1>
+          <div class="about-image">
+            <img src="about.jpg" alt="About Us Image">
+          </div>
+          <p>Welcome to ARTIFEX, your gateway to the rich heritage and cultural treasures of Sri Lanka. Immerse yourself in the beauty and craftsmanship of traditional products that reflect the essence of our island nation. ARTIFEX is a premier online destination where you can explore and purchase a wide range of authentic and handcrafted items that embody the legacy of Sri Lankan artisans.</p>
+          
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="section">
+          <h1>Contact Us</h1>
+          <form>
+            <div class="form-group">
+              <div class="icon">
+                <i class="fas fa-user"></i>
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="icon">
+                <i class="fas fa-envelope"></i>
+                <input type="email" class="form-control" placeholder="Your Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="icon">
+                <i class="fas fa-comment"></i>
+                <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+<div class="footer-back">
+    <div class="footer-wrap">
+        <div class="footer-mar">
+            <div class="foo-width-1 footer-pad">
+                <div class="footer-text">
+                    <h1>Company</h1>
+                    <p class="footer-para">Welcome to ARTIFEX, your gateway to the rich heritage and cultural treasures of Sri Lanka. 
+                            Immerse yourself in the beauty and craftsmanship of traditional products that reflect the essence of our island nation. 
+                            ARTIFEX is a premier online destination where you can explore and purchase a wide range of authentic and handcrafted items that embody the legacy of Sri Lankan artisans.</p>
+                </div>
+            </div>
+            <div class="foo-width-2 footer-pad">
+                <div class="footer-text">
+                    <h1>Site Link</h1>
+                    <a href="Contact Us.html">Contact Us</a>
+
+                </div>
+            </div>
+            <div class="foo-width-3 footer-pad">
+                <div class="footer-text">
+                    <h1>Contact Us</h1>
+                    <p class="address">10th Floor,<br>
+                        ARTIFEX,<br>
+                        Colombo 02,<br>
+                        Sri Lanka.<br>
+                        (+94) 11 1234567
+                    </p>
+                    <div class="media-icon">
+                        <img src="facebook.png" alt="social media icons">
+                        <img src="instagram.png" alt="social media icons">
+                        <img src="twitter.png" alt="social media icons">
+                        <img src="youtube.png" alt="social media icons">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-border">
+                <div class="footer-bottom">
+                    <p>Copyright <i class="far fa-copyright"></i> 2023 ARTIFEX. All Rights Reserved. Designed by Group F</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    function menuToggle() {
+        document.getElementById('nav-menu').classList.toggle('show');
+    }
+</script>
+</html>

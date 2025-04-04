@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="icon" type="image/png" sizes="96x96" href="logo-1.jpg">
+    <title>Handicrafts</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="handicraft.css">
+
+   <!-- custom js file link  -->
+   <script src="handicraft.js" defer></script>
+   <style>
+       mrk{
+           color:black;
+       }
+   </style>
+</head>
+<body>
+<div class="header-back">
+    <div class="nav-back">
+        <div class="nav-wrap">
+            <div class="nav-logo">
+                <a href="Home.html">
+                    <img src="logo-2.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="menu-icon-wrap">
+                <img src="menu.png" class="menu-icon" alt="menu img" onclick="menuToggle()">
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-menu-item" id="nav-menu-item">
+                    <li class="nav-list-item">
+                        <a class="nav-list-link active" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="Clay_Products.html">Clay Pots</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="handicraft.html">Handicrafts</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="mask.html">Wooden Masks</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="Contact Us.html">Contact Us</a>
+                    </li>
+                     <li class="nav-list-item pr-0">
+                        <a class="nav-list-link" href="Add to cart.html">Shopping Cart</a>
+                    </li>
+                    <li class="nav-list-item pr-0">
+                        <a class="nav-list-link" href="Main_Login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+  
+ 
+   <br><br>
+
+   <div class="products-container">
+
+      <div class="product" data-name="p-1">
+        <img src="https://i.etsystatic.com/7340254/r/il/658dfe/4603426094/il_794xN.4603426094_jrka.jpg" alt="">
+         <h3>Buddha Statue - Sri Lanka</h3>
+         <div class="price">Price : Rs.100000/=</div>
+      </div>
+
+      <div class="product" data-name="p-2">
+         <img src="https://i.etsystatic.com/37090151/r/il/0d4654/4739325492/il_794xN.4739325492_gssc.jpg" alt="" width="350px" height="200px">
+         <h3>Authentic Sri Lankan Wood Art </h3>
+         <div class="price">Price : Rs.30000/=</div>
+      </div>
+
+      <div class="product" data-name="p-3">
+        <img src="https://i.etsystatic.com/26510519/r/il/d1e054/4917931052/il_794xN.4917931052_qgu5.jpg" alt="">
+         <h3>Sri Lankan Traditional Wooden Bamunu Mask</h3>
+         <div class="price">Price : Rs.50000/=</div>
+      </div>
+
+      <div class="product" data-name="p-4">
+        <img src="https://i.etsystatic.com/36204635/r/il/d7dc6b/5068108046/il_794xN.5068108046_tfqg.jpg" alt="" width="350px" height="200px">
+        <h3>Buddha, Handcrafted, Sitting Pose, Vitharka Mudra</h3>
+         <div class="price">Price : Rs.30000/=</div>
+      </div>
+
+      <div class="product" data-name="p-5">
+         <img src="https://i.etsystatic.com/18518440/r/il/9fef24/2756338127/il_794xN.2756338127_nnpz.jpg" alt=""  width="350px" height="200px">
+         <h3>Hand Carved Sri Lankan Traditional Wood Carving</h3>
+         <div class="price">Price : Rs.33000/=</div>
+      </div>
+
+      <div class="product" data-name="p-6">
+         <img src="https://i.etsystatic.com/25576910/r/il/064145/3660413504/il_794xN.3660413504_gr8b.jpghttps://i.etsystatic.com/25576910/r/il/064145/3660413504/il_794xN.3660413504_gr8b.jpg" alt="" width="350px" height="200px">
+         <h3>Wooden Beautifully Hand Carved Buddha</h3>
+         <div class="price">Price : Rs.40500/=</div>
+      </div>
+
+      <div class="product" data-name="p-7">
+        <img src="https://i.etsystatic.com/21318635/r/il/43cf07/3860954150/il_794xN.3860954150_do3c.jpg" alt="" width="350px" height="200px">
+        <h3> Handmade Medium Wooden Elephant Wild</h3>
+        <div class="price">Price : Rs.7500/=</div>
+     </div>
+
+     <div class="product" data-name="p-8">
+      <img src="https://i.etsystatic.com/28008356/r/il/d98ea0/3875030245/il_794xN.3875030245_s9s3.jpg" alt="" width="350px" height="200px">
+      <h3>Sri Lankan Traditional Wooden (Deva) Mask</h3>
+        <div class="price">Price : Rs.13500/=</div>
+     </div>
+
+     <div class="product" data-name="p-9">
+        <img src="https://i.etsystatic.com/25576910/r/il/dded6b/3657833738/il_794xN.3657833738_t2wk.jpg" alt="" width="350px" height="200px">
+        <h3>God Ganesha Wooden Handmade Carved </h3>
+        <div class="price">Price : Rs.60000/=</div>
+     </div>
+
+     <div class="product" data-name="p-10">
+      <img src="https://i.etsystatic.com/27850597/r/il/d6db36/2879496094/il_794xN.2879496094_8dgw.jpg" alt="" width="350px" height="200px">
+      <h3>Secret wooden puzzle jewelry box</h3>
+      <div class="price">Price : Rs.20000/=</div>
+   </div>
+   
+
+   <div class="product" data-name="p-11">
+      <img src="https://i.etsystatic.com/19716982/r/il/eacfee/4515831264/il_794xN.4515831264_85ff.jpg" alt="" width="350px" height="200px">
+      <h3>Sri Lankan King & Queen New Statue </h3>
+      <div class="price">Price : Rs.32000/=</div>
+   </div>
+
+   <div class="product" data-name="p-12">
+      <img src="https://i.etsystatic.com/23620763/r/il/0afd25/2530431377/il_794xN.2530431377_fag0.jpg" alt="" width="350px" height="200px">
+      <h3>Elephant, Kandian perahara</h3>
+      <div class="price">Price : Rs.30000/=</div>
+   </div>
+</div>
+
+</div>
+
+<div class="products-preview">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="https://i.etsystatic.com/7340254/r/il/658dfe/4603426094/il_794xN.4603426094_jrka.jpg" alt="">
+         <h3>Buddha Statue - Sri Lanka</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>The Buddha is seated in the Dhyana mudrā or 'Meditation Position'. The Dhyana Mudra promotes the energy of meditation, deep contemplation and unity with higher energy</p>
+      <div class="price">Rs.100000/=</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img src="https://i.etsystatic.com/37090151/r/il/0d4654/4739325492/il_794xN.4739325492_gssc.jpg" alt="" width="350px" height="200px">
+      <h3>Authentic Sri Lankan Wood Art </h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Bring peace and tranquillity into your space with this beautifully handcrafted wooden art piece featuring a monk in deep worship.</p>
+      <div class="price">Rs.30000/=</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="https://i.etsystatic.com/26510519/r/il/d1e054/4917931052/il_794xN.4917931052_qgu5.jpg" alt="">
+         <h3>Sri Lankan Traditional Wooden Bamunu Mask</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+   
+      </div>
+      <p>Sri Lankan traditional wooden bamunu mask, wall hanging art decor, handmade carving artwork,</p>
+      <div class="price">Rs.50000/=</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="https://i.etsystatic.com/36204635/r/il/d7dc6b/5068108046/il_794xN.5068108046_tfqg.jpg" alt="" width="350px" height="200px">
+         <h3>Buddha, Handcrafted, Sitting Pose, Vitharka Mudra</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+       
+      </div>
+      <p> This sitting Buddha statue is made from the wood of a very valuable tree, the Ebony (Kaluwara) tree.</p>
+      <div class="price">Rs.30000/=</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="https://i.etsystatic.com/18518440/r/il/9fef24/2756338127/il_794xN.2756338127_nnpz.jpg" alt=""  width="350px" height="200px">
+         <h3>Hand Carved Sri Lankan Traditional Wood Carving</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>This wood carving masks are great for indoor or outdoor use. Excellent addition to any event</p>
+      <div class="price">Rs.33000/=</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="https://i.etsystatic.com/25576910/r/il/064145/3660413504/il_794xN.3660413504_gr8b.jpghttps://i.etsystatic.com/25576910/r/il/064145/3660413504/il_794xN.3660413504_gr8b.jpg" alt="" width="350px" height="200px">
+      <h3>Wooden Beautifully Hand Carved Buddha</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+        
+      </div>
+      <p>We are so delighted to offer you this genuinely handmade Buddha Meditation statue, just one version of many in our listings.</p>
+      <div class="price">Rs.40500/=</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+
+   <div class="preview" data-target="p-7">
+      <i class="fas fa-times"></i>
+      <img src="https://i.etsystatic.com/21318635/r/il/43cf07/3860954150/il_794xN.3860954150_do3c.jpg" alt="" width="350px" height="200px">
+        <h3> Handmade Medium Wooden Elephant Wild</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+        
+      </div>
+      <p>Traditional Sri Lankan handicraft of an elephant who takes part in a "Perahara" Carved in wood Decorated with colorful lacquer</p>
+      <div class="price">Rs.7500/=</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+
+   <div class="preview" data-target="p-8">
+      <i class="fas fa-times"></i>
+      <img src="https://i.etsystatic.com/28008356/r/il/d98ea0/3875030245/il_794xN.3875030245_s9s3.jpg" alt="" width="350px" height="200px">
+      <h3>Sri Lankan Traditional Wooden (Deva) Mask</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+        
+      </div>
+      <p>This mask making is a Traditional Art in Sri Lanka which is now become a dying art. </p>
+      <div class="price">Rs.13500/=</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+
+   <div class="preview" data-target="p-9">
+      <i class="fas fa-times"></i>
+      <img src="https://i.etsystatic.com/25576910/r/il/dded6b/3657833738/il_794xN.3657833738_t2wk.jpg" alt="" width="350px" height="200px">
+      <h3>God Ganesha Wooden Handmade Carved </h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+        
+      </div>
+      <p> Lord Ganesha is considered as the God of happiness, joy and prosperity. </p>
+      <div class="price">Rs.60000/=</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-10">
+      <i class="fas fa-times"></i>
+      <img src="https://i.etsystatic.com/27850597/r/il/d6db36/2879496094/il_794xN.2879496094_8dgw.jpg" alt="" width="350px" height="200px">
+      <h3>Secret wooden puzzle jewelry box</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+        
+      </div>
+      <p>This elephant box is entirely from wood and entirely handmade and hand carved by a talented handcrafter. </p>
+      <div class="price">Rs.20000/=</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+
+   <div class="preview" data-target="p-11">
+      <i class="fas fa-times"></i>
+      <img src="https://i.etsystatic.com/19716982/r/il/eacfee/4515831264/il_794xN.4515831264_85ff.jpg" alt="" width="350px" height="200px">
+      <h3>Sri Lankan King & Queen New Statue </h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+        
+      </div>
+      <p>Sri Lankan King & Queen New Statue made using wooden.</p>
+      <div class="price">Rs.32000/=</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+
+   <div class="preview" data-target="p-12">
+      <i class="fas fa-times"></i>
+      <img src="https://i.etsystatic.com/23620763/r/il/0afd25/2530431377/il_794xN.2530431377_fag0.jpg" alt="" width="350px" height="200px">
+      <h3>Elephant, Kandian perahara</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+        
+      </div>
+      <p>Kandian perahera is a traditional festival in Sri Lanka.This elephant is made out of wood.</p>
+      <div class="price">Rs.30000/=</div>
+      <div class="buttons">
+         <a href="payment.html" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+</div>
+<div class="footer-back">
+    <div class="footer-wrap">
+        <div class="footer-mar">
+            <div class="foo-width-1 footer-pad">
+                <div class="footer-text">
+                    <h1>Company</h1>
+                    <p class="footer-para">Welcome to ARTIFEX, your gateway to the rich heritage and cultural treasures of Sri Lanka. 
+                            Immerse yourself in the beauty and craftsmanship of traditional products that reflect the essence of our island nation. 
+                            ARTIFEX is a premier online destination where you can explore and purchase a wide range of authentic and handcrafted items that embody the legacy of Sri Lankan artisans.</p>
+                </div>
+            </div>
+            <div class="foo-width-2 footer-pad">
+                <div class="footer-text">
+                    <h1>Site Link</h1>
+                    <a href="Contact Us.html">Contact Us</a>
+
+                </div>
+            </div>
+            <div class="foo-width-3 footer-pad">
+                <div class="footer-text">
+                    <h1>Contact Us</h1>
+                    <p class="address">10th Floor,<br>
+                        ARTIFEX,<br>
+                        Colombo 02,<br>
+                        Sri Lanka.<br>
+                        (+94) 11 1234567
+                    </p>
+                    <div class="media-icon">
+                        <img src="facebook.png" alt="social media icons">
+                        <img src="instagram.png" alt="social media icons">
+                        <img src="twitter.png" alt="social media icons">
+                        <img src="youtube.png" alt="social media icons">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-border">
+                <div class="footer-bottom">
+                    <p>Copyright <i class="far fa-copyright"></i> 2023 ARTIFEX. All Rights Reserved. Designed by Group F</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    function menuToggle() {
+        document.getElementById('nav-menu').classList.toggle('show');
+    }
+</script>
+</html>

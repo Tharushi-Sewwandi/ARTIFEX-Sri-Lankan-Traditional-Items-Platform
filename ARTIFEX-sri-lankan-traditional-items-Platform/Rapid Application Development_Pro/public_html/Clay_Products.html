@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" type="image/png" sizes="96x96" href="logo-1.jpg">
+  <title>Traditional Clay Items</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url('');
+      background-size: cover;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      padding-top: 50px;
+    }
+
+    .product-card {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+   transition: transform 0.3s;
+      margin-bottom: 30px;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card:hover .description {
+      display: block;
+    }
+
+    .description {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .btn-buy {
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-top: 10px;
+    }
+
+    .btn-cart {
+      background-color: #555;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-top: 10px;
+    }
+
+    .rating {
+      color: #ffcc00;
+    }
+
+    .heading {
+      text-align: center;
+      margin-bottom: 30px;
+      color: black;
+    }
+  </style>
+</head>
+<div class="header-back">
+    <div class="nav-back">
+        <div class="nav-wrap">
+            <div class="nav-logo">
+                <a href="Home.html">
+                    <img src="logo-2.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="menu-icon-wrap">
+                <img src="menu.png" class="menu-icon" alt="menu img" onclick="menuToggle()">
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-menu-item" id="nav-menu-item">
+                    <li class="nav-list-item">
+                        <a class="nav-list-link active" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="Clay_Products.html">Clay Pots</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="handicraft.html">Handicrafts</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="mask.html">Wooden Masks</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link" href="Contact Us.html">Contact Us</a>
+                    </li>
+                     <li class="nav-list-item pr-0">
+                        <a class="nav-list-link" href="Add to cart.html">Shopping Cart</a>
+                    </li>
+                    <li class="nav-list-item pr-0">
+                        <a class="nav-list-link" href="Main_Login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<body>
+  <div class="container">
+   
+    <div class="row">
+      <div class="col-md-4">
+        <div class="product-card">
+          <h4>Designed Clay Bowl</h4>
+          <img src="1.jpg" alt="Product 1 Image" style="width: 100%;">
+          <p class="description">Hand crafted using traditional clay techniques, offer a unique experience.</p>
+          <p class="price">Rs.15,000</p>
+          <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+          <button class="btn btn-buy" onclick="window.location.href = 'payment.html';">Buy Now</button>
+          <button class="btn btn-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <h4>Clay Water Pitchers</h4>
+          <img src="2.jpg" alt="Product 2 Image" style="width: 100%;">
+          <p class="description">Made from high-quality clay, these water pitchers help maintain the coolness of water even in hot weather.</p>
+          <p class="price">Rs.20,000</p>
+          <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+          <button class="btn btn-buy"  onclick="window.location.href = 'payment.html';">Buy Now</button>
+          <button class="btn btn-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <h4>Clay Incense Holders</h4>
+          <img src="3.jpg" alt="Product 3 Image" style="width: 100%;">
+          <p class="description">Bring the calming and aromatic essence of incense into your home with clay incense holders.</p>
+          <p class="price">Rs.10,000</p>
+          <p class="rating">&#9733; &#9733; &#9733; &#9734; &#9734;</p>
+          <button class="btn btn-buy"  onclick="window.location.href = 'payment.html';">Buy Now</button>
+          <button class="btn btn-cart">Add to Cart</button>
+        </div>
+      </div>
+      <!-- Add more product cards as needed -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <h4>Clay Cooking Pots</h4>
+          <img src="4.jpg" alt="Product 4 Image" style="width: 100%;">
+          <p class="description">Ideal for slow-cooking traditional recipes, these clay cooking pots distribute heat evenly, resulting in delicious and flavorful dishes.</p>
+          <p class="price">Rs.5,000</p>
+          <p class="rating">&#9733; &#9733; &#9733; &#9734; &#9734;</p>
+          <button class="btn btn-buy"  onclick="window.location.href = 'payment.html';">Buy Now</button>
+          <button class="btn btn-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <h4>Clay Oil Lamps</h4>
+          <img src="5.jpg" alt="Product 5 Image" style="width: 100%;">
+          <p class="description">Add warmth and charm to your space with clay oil lamps.</p>
+          <p class="price">Rs.20,000</p>
+          <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+          <button class="btn btn-buy"  onclick="window.location.href = 'payment.html';">Buy Now</button>
+          <button class="btn btn-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <h4>Clay Sculptures</h4>
+          <img src="6.jpg" alt="Product 6 Image" style="width: 100%;">
+          <p class="description">Clay sculptures are a timeless art form that showcases the talent and creativity of artisans.</p>
+          <p class="price">Rs.10,000</p>
+          <p class="rating">&#9733; &#9733; &#9733; &#9734; &#9734;</p>
+          <button class="btn btn-buy"  onclick="window.location.href = 'payment.html';">Buy Now</button>
+          <button class="btn btn-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <h4>Clay Vases</h4>
+          <img src="7.jpg" alt="Product 7 Image" style="width: 100%;">
+          <p class="description">Display your favorite flowers or decorative elements in clay vases.</p>
+          <p class="price">Rs.8,000</p>
+          <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+          <button class="btn btn-buy"  onclick="window.location.href = 'payment.html';">Buy Now</button>
+          <button class="btn btn-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <h4>Clay Jewelry</h4>
+          <img src="8.jpg" alt="Product 8 Image" style="width: 100%;">
+          <p class="description">Hand crafted clay jewelry pieces offer a unique blend of elegance and cultural significance. .</p>
+          <p class="price">Rs.10,000</p>
+          <p class="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+          <button class="btn btn-buy"  onclick="window.location.href = 'payment.html';">Buy Now</button>
+          <button class="btn btn-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <h4>Clay Flower Pots</h4>
+          <img src="9.jpg" alt="Product 9 Image" style="width: 100%;">
+          <p class="description">Enhance your gardening experience with clay flower pots.</p>
+          <p class="price">Rs.20,000</p>
+          <p class="rating">&#9733; &#9733; &#9733; &#9734; &#9734;</p>
+          <button class="btn btn-buy"  onclick="window.location.href = 'payment.html';">Buy Now</button>
+          <button class="btn btn-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <div class="footer-back">
+    <div class="footer-wrap">
+        <div class="footer-mar">
+            <div class="foo-width-1 footer-pad">
+                <div class="footer-text">
+                    <h1>Company</h1>
+                    <p class="footer-para">Welcome to ARTIFEX, your gateway to the rich heritage and cultural treasures of Sri Lanka. 
+                            Immerse yourself in the beauty and craftsmanship of traditional products that reflect the essence of our island nation. 
+                            ARTIFEX is a premier online destination where you can explore and purchase a wide range of authentic and handcrafted items that embody the legacy of Sri Lankan artisans.</p>
+                </div>
+            </div>
+            <div class="foo-width-2 footer-pad">
+                <div class="footer-text">
+                    <h1>Site Link</h1>
+                    <a href="Contact Us.html">Contact Us</a>
+
+                </div>
+            </div>
+            <div class="foo-width-3 footer-pad">
+                <div class="footer-text">
+                    <h1>Contact Us</h1>
+                    <p class="address">10th Floor,<br>
+                        ARTIFEX,<br>
+                        Colombo 02,<br>
+                        Sri Lanka.<br>
+                        (+94) 11 1234567
+                    </p>
+                    <div class="media-icon">
+                        <img src="facebook.png" alt="social media icons">
+                        <img src="instagram.png" alt="social media icons">
+                        <img src="twitter.png" alt="social media icons">
+                        <img src="youtube.png" alt="social media icons">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-border">
+                <div class="footer-bottom">
+                    <p>Copyright <i class="far fa-copyright"></i> 2023 ARTIFEX. All Rights Reserved. Designed by Group F</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    function menuToggle() {
+        document.getElementById('nav-menu').classList.toggle('show');
+    }
+</script>
+</html>

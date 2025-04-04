@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="icon" type="image/png" sizes="96x96" href="logo-1.jpg">
+  <title>Admin Dashboard</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .sidebar {
+      background-color: #343a40;
+      color: #fff;
+      height: 100vh;
+    }
+    
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .sidebar ul li {
+      padding: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .sidebar ul li:hover {
+      background-color: #212529;
+    }
+    
+    .content {
+      padding: 20px;
+    }
+    
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    
+    .product-list,
+    .customer-list,
+    .order-list {
+      display: none;
+      margin-bottom: 30px;
+    }
+    
+    .product-list.show,
+    .customer-list.show,
+    .order-list.show {
+      display: block;
+    }
+    
+    .product-card {
+      background-color: #f8f9fa;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    
+    .product-card h3 {
+      font-size: 20px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+    
+    .product-card p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    
+    .btn {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 sidebar">
+        <ul>
+          <li id="products">Products</li>
+          <li id="orders">Orders</li>
+          <li id="customers">Customers</li>
+          <li id="settings">Settings</li>
+        </ul>
+      </div>
+      <div class="col-md-9 content">
+        <h1 id="section-title">Admin Dashboard</h1>
+        <div class="product-list show">
+          
+          <div class="row">
+            <div class="col-md-4">
+              <div class="product-card">
+                <img src="1.jpg" alt="Product 1">
+                <h3>Designed Clay Bowl</h3>
+                <p>Hand crafted using traditional clay techniques, offer a unique experience.</p>
+                <p>Price: LKR 15,000</p>
+                <button class="btn btn-primary">Edit</button>
+                <button class="btn btn-danger">Delete</button>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="product-card">
+                <img src="2.jpg" alt="Product 2">
+                <h3>Clay Water Pitchers</h3>
+                <p>Made from high-quality clay, these water pitchers help maintain the coolness of water even in hot weather.</p>
+                <p>Price:LKR 20,000</p>
+                <button class="btn btn-primary">Edit</button>
+                <button class="btn btn-danger">Delete</button>
+              </div>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="product-card">
+                <img src="3.jpg" alt="Product 3">
+                <h3>Clay Incense Holders</h3>
+                <p>Bring the calming and aromatic essence of incense into your home with clay incense holders.</p>
+                <p>Price:LKR 15,000 </p>
+                <button class="btn btn-primary">Edit</button>
+                <button class="btn btn-danger">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="order-list">
+          <h2>Orders</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Customer ID</th>
+                <th>Customer Name</th>
+                <th>Total</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ord_001</td>
+                <td>Cus_001</td>
+                <td>Sehan Dissanayaka</td>
+                <td>5000</td>
+                <td>Shipped</td>
+              </tr>
+              <tr>
+                <td>Ord_002</td>
+                <td>Cus_002</td>
+                <td>Will Smith</td>
+                <td>10000</td>
+                <td>Delivered</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="customer-list">
+          <h2>Customers</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Customer_Id</th>
+                <th>Email</th>
+                <th>Telephone Number</th>
+                <th>Password</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sehan Dissanayaka</td>
+                 <td>Cus_001</td>
+                <td>sehdiss@gmail.com</td>
+                 <td>0777228888</td>
+                 <td>******</td>
+              </tr>
+              <tr>
+                <td>Will Smith</td>
+                <td>Cus_002</td>
+                <td>smithw@gmail.com</td>
+                <td>0777228595</td>
+                 <td>********</td>
+              </tr>
+              <tr>
+                <td>Sunith Perera</td>
+                <td>Cus_003</td>
+                <td>sunithper@gmail.com</td>
+                <td>0777567567</td>
+                 <td>********</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#dashboard').click(function() {
+        $('.content > div').removeClass('show');
+        $('#section-title').text('Dashboard');
+      });
+      
+      $('#orders').click(function() {
+        $('.content > div').removeClass('show');
+        $('.order-list').addClass('show');
+        $('#section-title').text('Orders');
+      });
+      
+      $('#products').click(function() {
+        $('.content > div').removeClass('show');
+        $('.product-list').addClass('show');
+        $('#section-title').text('Products');
+      });
+      
+      $('#customers').click(function() {
+        $('.content > div').removeClass('show');
+        $('.customer-list').addClass('show');
+        $('#section-title').text('Customers');
+      });
+      
+      $('#settings').click(function() {
+        $('.content > div').removeClass('show');
+        $('.settings').addClass('show');
+        $('#section-title').text('Settings');
+      });
+    });
+  </script>
+</body>
+</html>
